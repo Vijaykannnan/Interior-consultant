@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgb(8, 5, 5);
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0 40px 40px;
+}
+header .logo {
+  border: 1px solid #fff;
+  height: 49px;
+  padding: 10px;
+  margin: 10px;
+}
+nav ul {
+  padding: 10px;
+  margin: 10px;
+}
+nav ul li {
+  display: inline;
+  margin-right: 50px;
+  font-size: 25px;
+  cursor: pointer;
+}
+nav ul li:first-child {
+  font-weight: 700;
+  border-bottom: 1px solid #fff;
+}
+
+/*main content*/
+
+main {
+  padding: 30px;
+}
+main h2 {
+  font-size: 40px;
+}
+main .read-more {
+  font-weight: 700;
+}
+main .banner img {
+  width: 96%;
+  height: auto;
+
+  padding: 20px;
+}
+.main-content {
+  padding-top: 15%;
+}
+
+/*owner-card*/
+.outer {
+  width: 30%;
+
+  padding: 10px;
+  position: relative;
+  left: 60%;
+  margin-top: -8%;
+  height: 30%;
+  margin-bottom: 10%;
+}
+.owner-card .name {
+  padding: 10px;
+}
+.role {
+  color: gray;
+}
+.owner-card img {
+  width: 80px;
+  height: 70px;
+  border-radius: 50%;
+}
+.owner-card {
+  display: flex;
+}
+.card-body .content {
+  font-size: 26px;
+  font-weight: 600;
+}
+footer p {
+  color: #fff;
+  text-align: center;
+  color: gray;
+}
+i {
+  padding: 10px;
+}
+header span {
+  font-size: 30px;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+/*nav toggle ku*/
+
+header em {
+  display: none;
+  position: absolute;
+  left: 75%;
+  z-index: 4;
+  cursor: pointer;
+}
+@media (max-width: 760px) {
+  .outer {
+    width: 75%;
+
+    padding: 10px;
+    position: relative;
+    left: 10%;
+    margin-top: -16%;
+    height: 25%;
+    margin-bottom: 10%;
+  }
+  .main-content {
+    padding-top: 2%;
+  }
+}
+
+@media (max-width: 845px) {
+  nav ul {
+    display: none;
+  }
+  nav ul {
+    position: absolute;
+    top: 100px;
+    background-color: rgb(8, 5, 5);
+    height: 950%;
+    width: 110%;
+    right: 10px;
+    top: 0;
+    z-index: 3;
+  }
+  ul {
+    margin-top: 70px;
+  }
+
+  nav ul li {
+    margin-top: 60px;
+    display: block;
+    text-align: center;
+    width: 80px;
+    margin-left: 250px;
+  }
+}
+@media (max-width: 380px) {
+  nav ul li {
+    margin-left: 180px;
+  }
+}
+@media (min-width: 850px) {
+  header span {
+    display: none;
+    z-index: 2;
+    position: absolute;
+  }
+  nav ul {
+    display: block;
+  }
+}
+@media (min-width: 760px) and (max-width: 850px) {
+  .outer {
+    margin-top: -18%;
+    height: 15%;
+  }
+  .card-body {
+    font-size: 14px;
+  }
+}
